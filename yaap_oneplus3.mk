@@ -21,17 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
-PRODUCT_NAME := arrow_oneplus3
+PRODUCT_NAME := yaap_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 

@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_oneplus3.mk
+    $(LOCAL_DIR)/yaap_oneplus3.mk
+
+#COMMON_LUNCH_CHOICES := \
+#    yaap_oneplus3-user \
+#    yaap_oneplus3-userdebug \
+#    yaap_oneplus3-eng
