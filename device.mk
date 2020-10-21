@@ -24,6 +24,7 @@
 # Device was launched with M
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+$(call inherit-product, device/oneplus/settings/common.mk)
 $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 
 # Setup dalvik vm configs
@@ -500,10 +501,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     $(LOCAL_PATH)/configs/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
-
-# Tri-state keys
-PRODUCT_PACKAGES += \
-    KeyHandler
 
 # USB
 PRODUCT_PACKAGES += \
